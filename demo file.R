@@ -88,4 +88,29 @@ class_factor <- factor(class_income, levels = c("poor", "middle_income", "rich")
 typeof(class_factor)
 
 
+install.packages("readxl")
+install.packages("dplyr")
+install.packages("tidyr")
+install.packages("tidyverse")
+install.packages("haven")
+install.packages("ggplot2")
+install.packages("writexl")
 
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(tidyverse)
+library(magrittr)
+library(stringr)
+
+library(haven)
+library(writexl)
+
+getwd()
+setwd("C:/Users/janelle/Desktop/R training")
+
+hprice_df <- readxl::read_excel("C:\Users\janelle\Desktop\R training\DATASETS\hprice3.xlsx")
+view(hprice_df)
+head(hprice_df)
+str(hprice_df)
